@@ -86,7 +86,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -112,7 +111,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -129,7 +127,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 5;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -137,7 +134,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 6;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
@@ -173,7 +169,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 10;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // tabControl1
             // 
@@ -210,7 +205,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Būsto paskola";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // bPaskola
             // 
@@ -220,7 +214,6 @@
             this.bPaskola.Size = new System.Drawing.Size(13, 13);
             this.bPaskola.TabIndex = 16;
             this.bPaskola.Text = "1";
-            this.bPaskola.Click += new System.EventHandler(this.bPaskola_Click);
             // 
             // label12
             // 
@@ -230,7 +223,6 @@
             this.label12.Size = new System.Drawing.Size(143, 13);
             this.label12.TabIndex = 15;
             this.label12.Text = "Paskolos palūkanos(0-100%)";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // textBox12
             // 
@@ -238,7 +230,6 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(143, 20);
             this.textBox12.TabIndex = 14;
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // label11
             // 
@@ -255,7 +246,6 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(100, 20);
             this.textBox11.TabIndex = 12;
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // tabPage2
             // 
@@ -280,7 +270,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Vartojimo kreditas";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // vKreditas
             // 
@@ -290,7 +279,6 @@
             this.vKreditas.Size = new System.Drawing.Size(13, 13);
             this.vKreditas.TabIndex = 27;
             this.vKreditas.Text = "2";
-            this.vKreditas.Click += new System.EventHandler(this.vKreditas_Click);
             // 
             // label13
             // 
@@ -300,7 +288,6 @@
             this.label13.Size = new System.Drawing.Size(143, 13);
             this.label13.TabIndex = 26;
             this.label13.Text = "Paskolos palūkanos(0-100%)";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // textBox13
             // 
@@ -308,7 +295,6 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(143, 20);
             this.textBox13.TabIndex = 25;
-            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // textBox6
             // 
@@ -316,7 +302,6 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 23;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
@@ -324,7 +309,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 13;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label6
             // 
@@ -359,7 +343,6 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 16;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // button2
             // 
@@ -395,7 +378,6 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 18;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox10
             // 
@@ -403,7 +385,6 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 20);
             this.textBox10.TabIndex = 19;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // groupBox1
             // 
@@ -425,7 +406,6 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paskolos gražinimas";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label23
             // 
@@ -454,7 +434,6 @@
             this.label21.Size = new System.Drawing.Size(55, 15);
             this.label21.TabIndex = 7;
             this.label21.Text = "label21";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label20
             // 
@@ -465,10 +444,6 @@
             this.label20.Size = new System.Drawing.Size(181, 25);
             this.label20.TabIndex = 6;
             this.label20.Text = "Viso gražinti reikės:";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // label19
-            // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(216, 32);
             this.label19.Name = "label19";
@@ -484,7 +459,6 @@
             this.label18.Size = new System.Drawing.Size(41, 13);
             this.label18.TabIndex = 4;
             this.label18.Text = "label18";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label17
             // 
@@ -512,7 +486,6 @@
             this.label15.Size = new System.Drawing.Size(146, 13);
             this.label15.TabIndex = 1;
             this.label15.Text = "Sutarties sudarymo mokestis: ";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label14
             // 
@@ -531,7 +504,6 @@
             this.label24.Size = new System.Drawing.Size(122, 13);
             this.label24.TabIndex = 10;
             this.label24.Text = "Realios šeimos pajamos:";
-            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // label25
             // 
@@ -541,7 +513,6 @@
             this.label25.Size = new System.Drawing.Size(41, 13);
             this.label25.TabIndex = 11;
             this.label25.Text = "label25";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // Form1
             // 
@@ -552,7 +523,6 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "3 Praktinis darbas";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -614,4 +584,3 @@
         private System.Windows.Forms.Label label25;
     }
 }
-
