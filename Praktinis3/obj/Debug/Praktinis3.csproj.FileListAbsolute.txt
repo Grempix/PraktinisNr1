@@ -10,3 +10,11 @@ c:\users\audrius\documents\visual studio 2013\Projects\Praktinis3\Praktinis3\obj
 C:\Users\Justinas\Desktop\Objektinio programavimo 3 praktinis darbas\Audrius Buika\Praktinis3\Praktinis3\bin\Debug\Praktinis3.exe.config
 C:\Users\Justinas\Desktop\Objektinio programavimo 3 praktinis darbas\Audrius Buika\Praktinis3\Praktinis3\obj\Debug\Praktinis3.exe
 C:\Users\Justinas\Desktop\Objektinio programavimo 3 praktinis darbas\Audrius Buika\Praktinis3\Praktinis3\obj\Debug\Praktinis3.pdb
+C:\Users\Justas\Documents\GitHub\PraktinisNr1\Praktinis3\bin\Debug\Praktinis3.exe.config
+C:\Users\Justas\Documents\GitHub\PraktinisNr1\Praktinis3\bin\Debug\Praktinis3.exe
+C:\Users\Justas\Documents\GitHub\PraktinisNr1\Praktinis3\bin\Debug\Praktinis3.pdb
+C:\Users\Justas\Documents\GitHub\PraktinisNr1\Praktinis3\obj\Debug\Praktinis3.Form1.resources
+C:\Users\Justas\Documents\GitHub\PraktinisNr1\Praktinis3\obj\Debug\Praktinis3.Properties.Resources.resources
+C:\Users\Justas\Documents\GitHub\PraktinisNr1\Praktinis3\obj\Debug\Praktinis3.csproj.GenerateResource.Cache
+C:\Users\Justas\Documents\GitHub\PraktinisNr1\Praktinis3\obj\Debug\Praktinis3.exe
+C:\Users\Justas\Documents\GitHub\PraktinisNr1\Praktinis3\obj\Debug\Praktinis3.pdb
