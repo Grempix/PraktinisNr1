@@ -164,6 +164,39 @@ namespace Praktinis3
         {
             this.Viso_grazinti = this.Sutarties_pasirasimo_mokestis + this.Paskolos_suma + ((this.Paskolos_suma / 100 * this.Paskolos_palukanos)/* * this.Grazinimo_laikotarpis*/);
         }
+
+
+        // salyginių sakinių tikrinimo supaprastinimas
+        private bool TikrinimasOr(int skaicius1, int skaicius2, double lyginimas)
+        {
+            return lyginimas < skaicius1 || lyginimas > skaicius2;
+        }
+
+        private bool TikrinimasAnd1(int skaicius1, int skaicius2, double lyginimas)
+        {
+            return lyginimas <= skaicius1 && lyginimas > skaicius2;
+        }
+
+        private bool TikrinimasAnd2(int skaicius1, int skaicius2, double lyginimas)
+        {
+            return lyginimas >= skaicius1 && lyginimas == skaicius2;
+        }
+
+        private bool TikrinimasPaskolosSuma(int skaicius1, double lyginimas)
+        {
+            return lyginimas < skaicius1;
+        }
+
+        private bool TikrinimasPastatoAmzius(int skaicius1, double lyginimas)
+        {
+            return lyginimas > skaicius1;
+        }
+
+        private bool TikrinimasPaskolosSuteikimas(double skaicius1, double lyginimas1)
+        {
+            return ((lyginimas1 * skaicius1) < this.menesineImoka());
+        }
+
         private int pradiniuDuomenuTikrinimas(int paskolosTipas)
         {
 
@@ -195,55 +228,55 @@ namespace Praktinis3
                 this.metinesPalukanosSuma();
 
                 // Vaikų skaičius
-                if (this.Vaiku_skaicius < 0 || this.Vaiku_skaicius > 10)
+                if (TikrinimasOr(0, 10, this.Vaiku_skaicius))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Vaikų skaičius gali būti nuo 0 iki 10!");
                     return 1;
                 }
-                else if (this.Vaiko_islaikimas <= 0 && this.Vaiku_skaicius > 1)
+                else if (TikrinimasAnd1(0, 1, this.Vaiko_islaikimas))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Vaiko išlaikimo išlaidos turi viršyti 0");
                     return 1;
                 }
-                else if (this.Vaiko_islaikimas >= 1 && this.Vaiku_skaicius == 0)
+                else if (TikrinimasAnd2(1, 0, this.Vaiko_islaikimas))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Jūs negalite skirti vaikų išlaikimui, nes jų neturite!");
                     return 1;
                 }
-                else if (this.Seimos_pajamos < 0 || this.Seimos_pajamos > 30000)
+                else if (TikrinimasOr(0, 30000, this.Seimos_pajamos))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Šeimos pajamos turi sudaryti nuo 0 iki 30000 €");
                     return 1;
                 }
-                else if (this.Seimos_skolos < 0 || this.Seimos_skolos > 15000)
+                else if (TikrinimasOr(0, 15000, this.Seimos_skolos))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Šeimos skola turi sudaryti nuo 0 iki 15000 €");
                     return 1;
                 }
-                else if (this.Paskolos_suma < 1)
+                else if (TikrinimasPaskolosSuma(0, this.Paskolos_suma))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Paskolos suma turi būti daugiau nei 0!");
                     return 1;
                 }
-                else if (this.Paskolos_palukanos < 0 || this.Paskolos_palukanos > 100)
+                else if (TikrinimasOr(0, 100, this.Paskolos_palukanos))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Paskolos palūkanos turi sudaryti nuo 0 iki 100%!");
                     return 1;
                 }
-                else if (this.Pastato_amzius > 40)
+                else if (TikrinimasPastatoAmzius(40, this.Pastato_amzius))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Pastato amžius ne daugiau nei 40!");
                     return 1;
                 }
-                else if ((this.Tikros_pajamos * 0.4) < this.menesineImoka())
+                else if (TikrinimasPaskolosSuteikimas(0.4, this.Tikros_pajamos))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Paskola negali būti suteikta, nes jūs esate per daug išsiskolines!");
@@ -274,49 +307,49 @@ namespace Praktinis3
                 this.metinesPalukanosSuma();
 
                 // Vaikų skaičius
-                if (this.Vaiku_skaicius < 0 || this.Vaiku_skaicius > 10)
+                if (TikrinimasOr(0, 10, this.Vaiku_skaicius))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Vaikų skaičius gali būti nuo 0 iki 10!");
                     return 1;
                 }
-                else if (this.Vaiko_islaikimas <= 0 && this.Vaiku_skaicius > 1)
+                else if (TikrinimasAnd1(0, 1, this.Vaiku_skaicius))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Vaiko išlaikimo išlaidos turi viršyti 0");
                     return 1;
                 }
-                else if (this.Vaiko_islaikimas >= 1 && this.Vaiku_skaicius == 0)
+                else if (TikrinimasAnd2(1, 0, this.Vaiko_islaikimas))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Jūs negalite skirti vaikų išlaikimui, nes jų neturite!");
                     return 1;
                 }
-                else if (this.Seimos_pajamos < 0 || this.Seimos_pajamos > 10000)
+                else if (TikrinimasOr(0, 10000, this.Seimos_pajamos))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Šeimos pajamos turi sudaryti nuo 0 iki 30000 €");
                     return 1;
                 }
-                else if (this.Seimos_skolos < 0 || this.Seimos_skolos > 5000)
+                else if (TikrinimasOr(0, 5000, this.Seimos_skolos))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Šeimos skola turi sudaryti nuo 0 iki 15000 €");
                     return 1;
                 }
-                else if (this.Paskolos_suma < 300 || this.Paskolos_suma > 26000)
+                else if (TikrinimasOr(300, 26000, this.Paskolos_suma))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Paskolos suma turi būti nuo 300 iki 26000 €!");
                     return 1;
                 }
-                else if (this.Paskolos_palukanos < 0 || this.Paskolos_palukanos > 100)
+                else if (TikrinimasOr(0, 100, this.Paskolos_palukanos))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Paskolos palūkanos turi sudaryti nuo 0 iki 100%!");
                     return 1;
                 }
-                else if ((this.Tikros_pajamos * 0.4) < this.menesineImoka())
+                else if (TikrinimasPaskolosSuteikimas(0.4, this.Tikros_pajamos))
                 {
                     groupBox1.Hide();
                     MessageBox.Show("Paskola negali būti suteikta, nes jūs esate per daug išsiskolines!");
@@ -325,6 +358,7 @@ namespace Praktinis3
             }
             return 0;
         }
+
         private double sutartiesSudarymoMokestis(int paskolosTipas)
         {
             double mokestis;
